@@ -1,0 +1,4 @@
+@mixin headingStyles($fontSize:20px) {
+    font-size: $fontSize;
+    color:$color-primary;
+}

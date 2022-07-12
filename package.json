@@ -1,0 +1,13 @@
+{
+  "name": "coder-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch styles/scss -o styles/css"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

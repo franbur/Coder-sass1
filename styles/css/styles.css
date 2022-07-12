@@ -1,0 +1,92 @@
+.cards {
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.card {
+  margin: 30px; }
+
+.cardImg {
+  width: 100%;
+  border: #f1bd61;
+  border-radius: 10px; }
+
+.footer {
+  text-align: center;
+  color: #1b1b1a;
+  gap: 5%; }
+  .footer Img {
+    width: 100px;
+    padding: 20px;
+    border: none; }
+    .footer Img:hover {
+      width: 120px; }
+    .footer Img h5 {
+      font-size: 14px;
+      margin-bottom: 5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(28, 26, 26);*/
+  box-sizing: border-box; }
+
+.title {
+  font-size: 20px;
+  color: black; }
+
+p {
+  font-size: 20px;
+  color: black;
+  font-size: 14px; }
+
+main {
+  border-bottom: 2px solid orange; }
+
+.btn {
+  margin: 10px;
+  align-self: center;
+  color: beige;
+  padding: 10px;
+  background-color: grey;
+  border: 1px solid orange;
+  border-radius: 5px; }
+
+.containerForm {
+  display: flex;
+  background-image: url(/assets/img/imagen1.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.form form {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 30px; }
+
+.form form input {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: white;
+  background-color: bisque;
+  border: #d2911f solid 2px;
+  width: 250px;
+  padding: 20px; }
+
+.info p {
+  color: beige;
+  font-size: 20px;
+  margin: 20px; }
+
+.ubicacion p {
+  margin-left: 20px;
+  color: white;
+  font-size: 18px; }
