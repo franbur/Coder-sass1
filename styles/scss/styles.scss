@@ -26,17 +26,17 @@ main{
 }
 
 .btn{
-  margin: 10px;
-  align-self: center;
-  color: beige;
-  padding: 10px;
-  background-color: grey;
-  border: 1px solid orange;
-  border-radius: 5px;
+  margin:map-get($btn,margin);
+  align-self:map-get($btn,align-self);
+  color:map-get($btn,color );
+  padding:map-get($btn,padding);
+  background-color:map-get($btn,background-color);
+  border:map-get($btn,border);
+  border-radius:map-get($btn,border-radius);
 }
 .containerForm{
 display: flex;
-background-image:url(/assets/img/imagen1.jpg);
+background-image:url(/assets/img/imagen1-min.jpg);
 height:500px ;
 background-size: cover;
 background-repeat: no-repeat;
@@ -44,13 +44,15 @@ background-repeat: no-repeat;
 
 .form form{
     margin-right: 100px;
+    margin-top: 20px;
     display: flex;
    justify-content: space-around;
    flex-direction: column;
    margin-left: 20px;
    margin-bottom: 30px; 
 }
-.form form input{
+.form  input{
+    @extend .form ;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -58,7 +60,7 @@ background-repeat: no-repeat;
     background-color: bisque;
     border: rgb(210, 145, 31) solid 2px;
     width: 250px;
-  padding: 20px;
+   padding: 20px;
 }
 
 
