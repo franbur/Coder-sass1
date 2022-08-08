@@ -1,78 +1,17 @@
-@import "variables";
-@import "mixins";
-@import "components";
-@import "footer";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
+@import "base/base";
 
-*{
-    margin: 0;
-    padding: 0;
-   /* background-color: rgb(28, 26, 26);*/
-    box-sizing: border-box;
+@import "components/logo";
+@import "components/heading";
+@import "components/dropdrow";
 
-}
-
-.title{
-    @include headingStyles;
-
-}
- p{
-    @include headingStyles;
-     font-size: 14px;
-   
-}
-main{
-    border-bottom: 2px solid orange;
-}
-
-.btn{
-  margin:map-get($btn,margin);
-  align-self:map-get($btn,align-self);
-  color:map-get($btn,color );
-  padding:map-get($btn,padding);
-  background-color:map-get($btn,background-color);
-  border:map-get($btn,border);
-  border-radius:map-get($btn,border-radius);
-}
-.containerForm{
-display: flex;
-background-image:url(/assets/img/imagen1-min.jpg);
-height:500px ;
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-.form form{
-    margin-right: 100px;
-    margin-top: 20px;
-    display: flex;
-   justify-content: space-around;
-   flex-direction: column;
-   margin-left: 20px;
-   margin-bottom: 30px; 
-}
-.form  input{
-    @extend .form ;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    color: white;
-    background-color: bisque;
-    border: rgb(210, 145, 31) solid 2px;
-    width: 250px;
-   padding: 20px;
-}
-
-
-.info p{
-    color: beige;
-    font-size: 20px;
-    margin: 20px;
-    
-    
-}
- .ubicacion p{
-     margin-left: 20px;
-     color: white;
-     font-size: 18px;
- }
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/slideshow";
+@import "layout/products";
+@import "layout/main";
+@import "layout/contact";
+@import "layout/ubicacion";
+@import "layout/footer";

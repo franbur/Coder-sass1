@@ -1,0 +1,41 @@
+.main {
+    grid-column: 4/ 7;
+    grid-row: 2/ 3;
+    .heading{
+        text-align: left;
+        margin-left: 2rem;
+        &-text{
+            font-family:'Water Brush',cursive;
+            font-size: size(lg);
+            font-weight: lighter;
+            letter-spacing: 0.5rem;
+        }
+    }
+} 
+.heading-info{
+    display: flex;
+    align-content: space-between;
+
+    @include response(md){
+        flex-wrap: wrap;
+       }
+    &-img {
+        width: 100%;
+        object-fit: cover;
+        @include response(md){
+            margin: 2rem 5rem;
+            justify-content: center;
+           }
+    }
+    &-text {
+        padding: 2rem;
+        font-size: size(md);
+        color: color(primary);
+        text-align: left;
+        
+    }
+    p {
+        padding: 3rem;
+       
+    }
+}
