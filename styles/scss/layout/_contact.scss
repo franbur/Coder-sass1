@@ -1,7 +1,9 @@
 .contact-heading {
 @include flexPosition (space-around);
 
-
+@include response(sm){
+    flex-wrap: wrap;
+}
 }
 .inputs-group {
     display: flex;

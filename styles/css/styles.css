@@ -326,16 +326,25 @@ html {
 
 .heading-info {
   display: flex;
-  align-content: space-between; }
+  align-content: space-between;
+  justify-content: center; }
   @media (max-width: 760px) {
+    .heading-info {
+      flex-wrap: wrap; } }
+  @media (max-width: 560px) {
     .heading-info {
       flex-wrap: wrap; } }
   .heading-info-img {
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    align-content: center; }
     @media (max-width: 760px) {
       .heading-info-img {
         margin: 2rem 5rem;
+        justify-content: center; } }
+    @media (max-width: 560px) {
+      .heading-info-img {
+        margin: 1rem 3rem;
         justify-content: center; } }
   .heading-info-text {
     padding: 2rem;
@@ -349,6 +358,9 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media (max-width: 560px) {
+    .contact-heading {
+      flex-wrap: wrap; } }
 
 .inputs-group {
   display: flex;
